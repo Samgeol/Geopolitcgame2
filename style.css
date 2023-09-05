@@ -1,0 +1,153 @@
+.linha-superior {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  height: 11%; /* Ajuste a altura para se adaptar a diferentes tamanhos de tela */
+  background-color: #000;
+  z-index: 9999;
+  text-align: center;
+  padding: 0.5%;
+}
+
+#text-superior {
+  text-align: center;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 1% 0; /* Espaçamento interno vertical */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 0.5%;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p::before {
+  content: "\00a9";
+  display: inline-block;
+  margin-right: 0.2%;
+}
+
+.play-button {
+  width: 15%; /* Ajuste o tamanho do botão proporcionalmente */
+  max-width: 150px; /* Defina um tamanho máximo para o botão */
+  height: auto; /* Para manter a proporção do botão */
+  background-color: darkgreen;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%; /* Use um valor maior para um botão mais arredondado */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: background-color 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 200%;
+  color: white;
+}
+
+.play-button:hover {
+  background-color: green;
+}
+
+.hiddenicon {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 49%;
+}
+
+.moneyIcon {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 52%;
+}
+
+
+.icon-container {
+  text-align: center;
+  margin-top: 5%;
+}
+
+.country-selector {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 80%; /* Defina uma largura responsiva */
+  max-width: 300px; /* Defina uma largura máxima */
+  padding: 15px;
+}
+
+.country-selector label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.country-selector select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.country-selector button {
+  padding: 8px 12px;
+  background-color: gray;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.country-selector button:hover {
+  background-color: gainsboro;
+}
+
+#country-nameandflag{
+  color: black;
+  top: 10%;
+  left: 35%;
+  position: absolute;
+  display: none;
+  font-family:monospace;
+}
+
+.popup-button {
+  cursor: pointer;
+}
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 1000; /* Adjust this value as needed */
+}

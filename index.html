@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Game of Countries</title>
+</head>
+<body>
+    <div class="linha-superior">
+        <h1 id="text-superior">GAME OF COUNTRIES</h1>
+    </div>
+    <div id="country-nameandflag">
+        <h1 class="Brasil">Republica federativa do brasil</h1>
+    </div>
+
+    <button class="play-button" onclick="toggleIconAndShowCountrySelector()">Play</button>
+
+    <footer>
+        <p> 2023 Samuel Felipe Todos os direitos reservados.</p>
+    </footer>
+
+    <div class="popup-button" onclick="openHammerPopup()">
+        <span style="font-size: 24px;" id="hiddenIcon" class="hiddenicon">🔨</span>
+    </div>
+    <div class="popup" id="hammerPopup">
+        <p>Numero de industrias:<span id="indamount"></span></p>
+        <button onclick="ConstruirIndustrias(moneyAmount)">Construir industrias</button>
+        <button onclick="closeHammerPopup()">Close</button>
+    </div>
+    
+        <div class="popup-button" onclick="openMoneyPopup()">
+            <span style="font-size: 24px;" id="moneyIcon" class="moneyIcon">💰</span>
+        </div>
+        <div class="popup" id="moneyPopup"></div>
+            <p>Money: <span id="moneyAmount"></span></p>
+            <button onclick="closeMoneyPopup()">Close</button>
+        </div>
+    
+    
+    <div class="country-selector" id="countrySelector">
+        <label for="country">Selecione um país:</label>
+        <select id="country" name="country">
+            <option value="brasil">Brasil</option>
+            <option value="outraspaises">Outros Países</option>
+        </select>
+        
+        
+              
+        <button onclick="hideCountrySelector()">Confirmar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
